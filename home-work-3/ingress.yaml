@@ -12,6 +12,6 @@ spec:
         pathType: Exact
         backend:
           service:
-            name: kuber-service
+            name: my-service
             port:
               number: 80
