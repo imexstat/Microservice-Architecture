@@ -1,0 +1,31 @@
+replicaCount: 2
+
+image:
+  repository: "proferio/homework-4"
+  tag: "v0.0.6"
+  port: 8000
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 8000
+
+prometheus:
+  alertmanager:
+    enabled: false
+
+  pushgateway:
+    enabled: false
+
+  nodeExporter:
+    enabled: false
+
+grafana:
+  admin:
+    existingSecret: users-app-auth
+    userKey: grafana-user
+    passwordKey: grafana-password
+  persistence:
+    enabled: true
+  service:
+    type: NodePort
