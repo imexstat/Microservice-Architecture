@@ -1,0 +1,8 @@
+architecture: replicaset
+replicaCount: 2
+port: 27017
+replicaSetName: db
+auth:
+  enabled: true
+  rootPassword: password
+  rootUser: admin

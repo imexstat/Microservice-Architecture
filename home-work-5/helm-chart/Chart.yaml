@@ -1,0 +1,7 @@
+apiVersion: v2
+name: own-users
+description: Completed homework!
+type: application
+version: 0.1.0
+appVersion: ""
+

@@ -1,0 +1,11 @@
+replicaCount: 2
+
+image:
+  repository: ilialikovmsk/homework-4
+  tag: latest
+  port: 8000
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 8000
